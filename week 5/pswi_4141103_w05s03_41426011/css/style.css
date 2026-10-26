@@ -1,0 +1,122 @@
+:root {
+  --brand: #3f0445;
+  --text: #243244;
+  --border: #f9e6e6;
+  --bg: #f5f6f8;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  max-width: 60rem;
+  margin: auto;
+  padding: 1rem;
+  font-family: Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+header,
+main {
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  background: #f3d4e6;
+  border: 1px solid var(--border);
+}
+
+h1 {
+  margin-top: 0;
+  color: var(--brand);
+}
+
+p {
+  margin: 0.75rem 0;
+}
+
+form {
+  display: grid;
+  gap: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 0.6rem;
+  font: inherit;
+  border: 1px solid #afc0cb;
+  border-radius: 4px;
+}
+
+textarea {
+  min-height: 100px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+fieldset {
+  padding: 1rem;
+  border: 1px solid var(--border);
+}
+
+.radio-group,
+.checkbox-group {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.radio-group label,
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.radio-group input,
+.checkbox-group input {
+  width: auto;
+}
+button {
+  width: fit-content;
+  padding: 0.7rem 1.2rem;
+  color: white;
+  background: #d885d2;
+  border: 0;
+  border-radius: 1px;
+  cursor: pointer;
+}
+button:hover {
+  background: #1e2f61;
+}
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid var(--brand);
+}
+@media (max-width: 600px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.nav-list { display: flex; flex-wrap: wrap; gap: 1rem;
+ list-style: none; padding: 0; }
+
+ .cards { display: flex; flex-wrap: wrap; gap: 1rem; }
+.card { flex: 1 1 15rem; padding: 1rem; background-color: rgb(92, 180, 180);
+       border: 5px solid rgb(3, 3, 46); min-width: 0;  border-radius: 12px; }
+
+ .card h2 { overflow-wrap: anywhere; }
+
+ 
+
+ .catalog { grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); }
+ .card { display: flex; flex-direction: column; gap: .5rem; } .card h2, .card p { margin: 0; } .card a { align-self: start; }
+ /* urutan konten tetap ditentukan HTML */ .card { padding: var(--space-2, 1rem); }
